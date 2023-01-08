@@ -59,6 +59,7 @@ https://disk.yandex.ru/i/wYlzw5NADA1SXg
 7. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
 8. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
 9. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
+
 [ScriptedJenkinsfile](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/09-ci-04-jenkins/ScriptedJenkinsfile)
 
 
