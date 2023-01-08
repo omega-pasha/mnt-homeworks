@@ -1,23 +1,26 @@
 # Домашнее задание к занятию "10.Jenkins"
-
 ## Подготовка к выполнению
 
 1. Создать 2 VM: для jenkins-master и jenkins-agent.
 
-[Создал 2 виртуальные машины](https://disk.yandex.ru/i/0FAIdoYTJXl1uQ)
+Создал 2 виртуальные машины - https://disk.yandex.ru/i/0FAIdoYTJXl1uQ
 
 2. Установить jenkins при помощи playbook'a.
 3. Запустить и проверить работоспособность.
 
-Проверил сделав простой билд, который просто выведет [содержимое директории](https://disk.yandex.ru/i/d38cQrXDGSNK3A)
+Проверил сделав простой билд, который просто выведет содержимое директории - https://disk.yandex.ru/i/d38cQrXDGSNK3A
 
 4. Сделать первоначальную настройку.
 
-Настроил подключение [агента](https://disk.yandex.ru/i/09C5nFhqU3HY_w)
+Настроил подключение агента - https://disk.yandex.ru/i/09C5nFhqU3HY_w
 
 ## Основная часть
-
 1. Сделать Freestyle Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
+
+- Настроил хранение только 5 билдов - https://disk.yandex.ru/i/XaAkDssnzXSS2g
+- Подключился к репозиторию - https://disk.yandex.ru/i/iY762ojLZBDfqA
+- Настроил несколько шагов сборки - https://disk.yandex.ru/i/xBtAMd_iKjroDw
+
 2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
 3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
 4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
