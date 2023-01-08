@@ -23,10 +23,36 @@
 - Запустил билд, он склонировал репозиторий по заданным Credentials, вывел содержимое папки и запустил `molecule test` - https://disk.yandex.ru/i/ozH_4gvNhg0tUw
 
 2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
-3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
-4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
-5. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
-6. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
-7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
-8. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
+```
+pipeline {
+    agent {
+        label 'linux'
+    }
+    stages {
+        stage("Git clone") {
+            steps {
+                git branch: 'hw-8-4', credentialsId: 'bca4984b-8781-4b5b-a5f9-51a9f1f0cdcc', url: 'https://github.com/omega-pasha/playbook.git'
+            }
+        }
+        stage("Download molecule"){
+            steps {
+                sh "pip3 install molecule molecule_docker ansible-lint yamllint"
+            }
+        }
+        stage("run test molecule"){
+            steps {
+                sh "cd ./roles/clickhouse && ls -lah && molecule test"
+            }
+        }
+    }
+}
+```
+https://disk.yandex.ru/i/MslvP0GWVucxzQ
+
+4. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
+5. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
+6. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
+7. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
+8. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
+9. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
 
