@@ -20,6 +20,7 @@
 - Настроил хранение только 5 билдов - https://disk.yandex.ru/i/XaAkDssnzXSS2g
 - Подключился к репозиторию - https://disk.yandex.ru/i/iY762ojLZBDfqA
 - Настроил несколько шагов сборки - https://disk.yandex.ru/i/xBtAMd_iKjroDw
+- Запустил билд, он склонировал репозиторий по заданным Credentials, вывел содержимое папки и запустил `molecule test` - https://disk.yandex.ru/i/ozH_4gvNhg0tUw
 
 2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
 3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
