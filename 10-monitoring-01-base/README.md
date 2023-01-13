@@ -63,13 +63,13 @@ summ_3xx_requests)/(summ_all_requests). А, собственно, повлият
 
 а) работающий код python3-скрипта,
 
-
+> https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-01-base/custom_monitoring.py
 
 б) конфигурацию cron-расписания,
 
-*/1 * * * * /opt/custom_monitoring.py
+```*/1 * * * * /opt/custom_monitoring.py```
 
 в) пример верно сформированного 'YY-MM-DD-awesome-monitoring.log', имеющий не менее 5 записей,
 
-
+> https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-01-base/23-01-13-awesome-monitoring.log
 
