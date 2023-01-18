@@ -16,21 +16,61 @@ Pull - По сути это централизация сбора метрик. 
     - Nagios - Гибридная
 ```
 
-7. Склонируйте себе [репозиторий](https://github.com/influxdata/sandbox/tree/master) и запустите TICK-стэк, 
+3. Склонируйте себе [репозиторий](https://github.com/influxdata/sandbox/tree/master) и запустите TICK-стэк, 
 используя технологии docker и docker-compose.
 
 В виде решения на это упражнение приведите выводы команд с вашего компьютера (виртуальной машины):
-
-    - curl http://localhost:8086/ping
+```
+    - curl http://localhost:8086/ping -v
+    
+*   Trying 127.0.0.1:8086...
+* Connected to localhost (127.0.0.1) port 8086 (#0)
+> GET /ping HTTP/1.1
+> Host: localhost:8086
+> User-Agent: curl/7.84.0
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 204 No Content
+< Content-Type: application/json
+< Request-Id: 7c44f329-94e8-11ed-8064-0242ac120003
+< X-Influxdb-Build: OSS
+< X-Influxdb-Version: 1.8.10
+< X-Request-Id: 7c44f329-94e8-11ed-8064-0242ac120003
+< Date: Sun, 15 Jan 2023 15:22:55 GMT
+<
+* Connection #0 to host localhost left intact
+```
+```
     - curl http://localhost:8888
-    - curl http://localhost:9092/kapacitor/v1/ping
+   <!DOCTYPE html><html><head><link rel="stylesheet" href="/index.c708214f.css"><meta http-equiv="Content-type" content="text/html; charset=utf-8"><title>Chronograf</title><link rel="icon shortcut" href="/favicon.70d63073.ico"></head><body> <div id="react-root" data-basepath=""></div> <script type="module" src="/index.e81b88ee.js"></script><script src="/index.a6955a67.js" nomodule="" defer></script> </body></html>%
+```
+```
+    - curl http://localhost:9092/kapacitor/v1/ping -v
+    
+*   Trying 127.0.0.1:9092...
+* Connected to localhost (127.0.0.1) port 9092 (#0)
+> GET /kapacitor/v1/ping HTTP/1.1
+> Host: localhost:9092
+> User-Agent: curl/7.84.0
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 204 No Content
+< Content-Type: application/json; charset=utf-8
+< Request-Id: c6d69646-94e8-11ed-806b-0242ac120004
+< X-Kapacitor-Version: 1.6.5
+< Date: Sun, 15 Jan 2023 15:25:00 GMT
+<
+* Connection #0 to host localhost left intact
+    
+```  
 
 А также скриншот веб-интерфейса ПО chronograf (`http://localhost:8888`). 
 
-P.S.: если при запуске некоторые контейнеры будут падать с ошибкой - проставьте им режим `Z`, например
-`./data:/var/lib:Z`
-#
-8. Перейдите в веб-интерфейс Chronograf (`http://localhost:8888`) и откройте вкладку `Data explorer`.
+https://disk.yandex.ru/i/RrWKKT5fIzkRzg
+
+4. Перейдите в веб-интерфейс Chronograf (`http://localhost:8888`) и откройте вкладку `Data explorer`.
 
     - Нажмите на кнопку `Add a query`
     - Изучите вывод интерфейса и выберите БД `telegraf.autogen`
