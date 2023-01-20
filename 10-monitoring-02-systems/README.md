@@ -102,6 +102,6 @@ https://disk.yandex.ru/i/RrWKKT5fIzkRzg
 
 Приведите скриншот с отображением метрик утилизации места на диске (disk->host->telegraf_container_id) из веб-интерфейса.
 
-https://disk.yandex.ru/i/Xco-WDHWCFJAZg
+https://disk.yandex.ru/i/l12S6pXKRNSqjA
 
 
