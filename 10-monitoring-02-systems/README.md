@@ -77,7 +77,7 @@ Push - Клиент может высылать метрики, одноврем
 
 А также скриншот веб-интерфейса ПО chronograf (`http://localhost:8888`). 
 
-https://disk.yandex.ru/i/RrWKKT5fIzkRzg
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-02-systems/Снимок%20экрана%202023-01-15%20в%2022.28.15.png)
 
 4. Изучите список telegraf inputs.
 
@@ -105,7 +105,7 @@ https://disk.yandex.ru/i/RrWKKT5fIzkRzg
 
 Приведите скриншот с отображением метрик утилизации места на диске (disk->host->telegraf_container_id) из веб-интерфейса.
 
-https://disk.yandex.ru/i/l12S6pXKRNSqjA
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-02-systems/Снимок%20экрана%202023-01-20%20в%2015.48.57.png)
 
 5. Изучите список [telegraf inputs](https://github.com/influxdata/telegraf/tree/master/plugins/inputs). 
 Добавьте в конфигурацию telegraf следующий плагин - [docker](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/docker):
@@ -138,7 +138,7 @@ https://disk.yandex.ru/i/l12S6pXKRNSqjA
 
 Факультативно можете изучить какие метрики собирает telegraf после выполнения данного задания.
 
-https://disk.yandex.ru/i/UrR8yUcahipFLg
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-02-systems/Снимок%20экрана%202023-01-20%20в%2017.03.56.png)
 
 ## Дополнительное задание (со звездочкой*) - необязательно к выполнению
 
@@ -152,5 +152,5 @@ https://disk.yandex.ru/i/UrR8yUcahipFLg
     - ...
     - фантазируйте)
     
- https://disk.yandex.ru/i/gyY7ECuDIme3UQ
+ ![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-02-systems/Снимок%20экрана%202023-01-20%20в%2017.31.34.png)
 
