@@ -11,7 +11,7 @@
 
 Решение домашнего задания - скриншот веб-интерфейса grafana со списком подключенных Datasource.
 
-
+![](https://github.com/omega-pasha/mnt-homeworks/tree/MNT-video/10-monitoring-03-grafana/Снимок\ экрана\ 2023-02-05\ в\ 21.11.39.png)
 
 ## Задание 2
 Изучите самостоятельно ресурсы:
