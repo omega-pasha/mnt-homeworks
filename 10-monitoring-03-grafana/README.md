@@ -38,6 +38,10 @@
 
 Для решения ДЗ - приведите скриншот вашей итоговой Dashboard.
 
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-03-grafana/Снимок%20экрана%202023-02-08%20в%2012.08.31.png)
+
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-03-grafana/Снимок%20экрана%202023-02-08%20в%2012.16.21.png)
+
 ## Задание 4
 Сохраните ваш Dashboard.
 
