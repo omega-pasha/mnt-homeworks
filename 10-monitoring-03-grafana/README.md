@@ -26,6 +26,13 @@
 
 Для решения данного ДЗ приведите promql запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
+- 100 - (avg by (instance) (rate(node_cpu_seconds_total{job="nodeexporter",mode="idle"}[1m])) * 100)
+- node_load1{instance="nodeexporter:9100"}, node_load5{instance="nodeexporter:9100"}, node_load15{instance="nodeexporter:9100"}
+- node_memory_MemFree_bytes{instance="nodeexporter:9100"}/1024/1024
+- node_filesystem_avail_bytes{instance="nodeexporter:9100",mountpoint="/",fstype!~"tmpfs|fuse.lxcfs"}/1024/1024/1024
+
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-03-grafana/Снимок%20экрана%202023-02-05%20в%2023.57.41.png)
+
 ## Задание 3
 Создайте для каждой Dashboard подходящее правило alert (можно обратиться к первой лекции в блоке "Мониторинг").
 
