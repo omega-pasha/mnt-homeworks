@@ -51,10 +51,5 @@
 
 В решении задания - приведите листинг этого файла.
 
----
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-03-grafana/dashboard.json)
 
-### Как оформить ДЗ?
-
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
-
----
