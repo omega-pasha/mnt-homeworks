@@ -55,6 +55,8 @@ index => "logstash-%{+YYYY.MM.dd}"
 Данные логи должны порождать индекс logstash-* в elasticsearch. Если данного индекса нет - воспользуйтесь советами 
 и источниками из раздела "Дополнительные ссылки" данного ДЗ.
  
--
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/Снимок%20экрана%202023-02-15%20в%2022.03.59.png)
+
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/Снимок%20экрана%202023-02-15%20в%2022.22.06.png)
 
  
