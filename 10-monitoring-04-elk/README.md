@@ -23,6 +23,8 @@ Filebeat следует сконфигурировать для отправки
 
 ![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/Снимок%20экрана%202023-02-15%20в%2022.10.07.png)
 
+![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/Снимок%20экрана%202023-02-15%20в%2022.58.38.png)
+
 ## Задание 2
 
 Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create)
