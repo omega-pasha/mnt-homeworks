@@ -25,6 +25,24 @@ Filebeat следует сконфигурировать для отправки
 
 ![](https://github.com/omega-pasha/mnt-homeworks/blob/MNT-video/10-monitoring-04-elk/Снимок%20экрана%202023-02-15%20в%2022.58.38.png)
 
+Использовал директорию help, только исправил пару параметров:
+- не правильно указан путь
+```
+logstash:
+    volumes:
+      - ./configs/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:Z
+```
+- не была указана общая сеть
+```
+filebeat:
+    networks:
+      - elastic
+```
+- прописал наименование индекса в logstash.conf
+```
+index => "logstash-%{+YYYY.MM.dd}"
+```
+
 ## Задание 2
 
 Перейдите в меню [создания index-patterns  в kibana](http://localhost:5601/app/management/kibana/indexPatterns/create)
@@ -37,12 +55,6 @@ Filebeat следует сконфигурировать для отправки
 Данные логи должны порождать индекс logstash-* в elasticsearch. Если данного индекса нет - воспользуйтесь советами 
 и источниками из раздела "Дополнительные ссылки" данного ДЗ.
  
----
-
-### Как оформить ДЗ?
-
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
-
----
+-
 
  
